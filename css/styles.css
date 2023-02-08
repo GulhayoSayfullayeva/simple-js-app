@@ -1,0 +1,23 @@
+body{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(178, 192, 192);
+    font-size: 16px;
+    line-height: normal;
+    min-height: 100vh;
+}
+.text-center{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+.grid-item{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid blue;
+    box-shadow: antiquewhite;
+}
