@@ -5,4 +5,4 @@ pokemonList =[
     { name: "Charmander", height: 0.6, types: ["monster", "dragon"]},
     { name: "Charmeleon", height: 1.1, types: ["monster", "dragon"]},
     { name: "Charizard", height: 1.7, types: ["monster", "dragon"]}
-]
+];
