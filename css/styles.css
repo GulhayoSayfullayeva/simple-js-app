@@ -9,15 +9,20 @@ body{
 .text-center{
     text-align: center;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-.grid-item{
+.pokemonButton{
     background-color: #fff;
     padding: 20px;
+    margin: 5px;
     text-align: center;
     border: 1px solid blue;
     box-shadow: antiquewhite;
+}
+li{
+    display: inline;
 }
