@@ -1,28 +1,57 @@
 body{
-    padding: 20px;
-    margin: 10px;
-    background-color: rgb(178, 192, 192);
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(195, 150, 206);
     font-size: 16px;
     line-height: normal;
     min-height: 100vh;
 }
-.text-center{
+.header{
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px 5px black;
     text-align: center;
+    font-size: 36px;
+    width: 100%;
 }
-div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.pokemonList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    
 
 }
 .pokemonButton{
-    background-color: #fff;
+    background-color: rgb(213, 196, 223);
     padding: 20px;
+    width: 200px;
     margin: 5px;
     text-align: center;
-    border: 1px solid blue;
-    box-shadow: antiquewhite;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(121, 113, 113);
+    box-shadow: 0 4px 8px 0 rgba(190, 181, 181, 0.2), 0 6px 20px 0 rgba(187, 182, 182, 0.19);
 }
-li{
-    display: inline;
+.pokemonButton:hover{
+    opacity: 0.5;
+}
+
+#loading{
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 2s infinite linear;
+    visibility: hidden;
+}
+#loading.display{
+    visibility: visible;
+}
+@keyframes spin{
+    from{ transfrom: rotate(0deg);}
+    to{ transform: rotate(360deg);}
 }
