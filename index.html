@@ -8,11 +8,26 @@
     </head>
     <body>
           <div class="header">Pokemon</div>
+          <div class="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="modal-header-title">Modal Title</div>
+                    <button class="close-button">&times;</button>
+                </div>
+                <div class="modal-content">
+                    
+                    <img  class="pokemon-image" alt="Image of Pokemon">
+                    <div class="pokemon-details"></div>
+
+                </div>
+            </div>
+         </div>
           <div>
              <div id="loading"></div>
              <ul class="pokemonList">
 
              </ul>
+             
                 <script src="js/promise-pollyfill.js"></script>
                 <script src="js/fetch.umd.js"></script>
                 <script src="js/scripts.js"></script>
