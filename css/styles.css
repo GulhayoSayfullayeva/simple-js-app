@@ -1,44 +1,44 @@
 body{
-    padding: 10px;
-    margin: 20px;
+    
     background-color: rgb(195, 150, 206);
     font-size: 16px;
     line-height: normal;
     min-height: 100vh;
 }
-.header{
-    color: white;
-    padding: 20px;
-    text-shadow: 2px 2px 5px black;
-    text-align: center;
-    font-size: 36px;
-    width: 100%;
+.navbar{
+    background-color:#9c49e9;
 }
+
 .pokemonList{
+    padding: 20px;
+    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-content: center;
-    list-style-type: none;
     
 
 }
-.pokemonButton{
+.list-group-item{
+    background: none;
+    border: none;
+}
+ .btn-secondary{
     background-color: rgb(213, 196, 223);
-    padding: 20px;
-    width: 200px;
-    margin: 5px;
+    padding:20px;
+    width:180px;
+    margin: 0 auto;
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px rgb(121, 113, 113);
     box-shadow: 0 4px 8px 0 rgba(190, 181, 181, 0.2), 0 6px 20px 0 rgba(187, 182, 182, 0.19);
 }
-.pokemonButton:hover{
+.btn-secondary:hover{
     opacity: 0.5;
-}
+}  
 
-#loading{
+/* #loading{
     width: 2rem;
     height: 2rem;
     border: 5px solid #f3f3f3;
@@ -54,9 +54,9 @@ body{
 @keyframes spin{
     from{ transfrom: rotate(0deg);}
     to{ transform: rotate(360deg);}
-}
+} */
 
-.modal-container{
+/* .modal-container{
     position: fixed;
     opacity: 0;
     top: 0;
@@ -111,12 +111,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.pokemon-details{
+} */
+/* .pokemon-details{
     padding: 10px;
     font-size: 1rem;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     
-}
+} */
