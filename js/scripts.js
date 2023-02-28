@@ -1,7 +1,7 @@
 let pokemonRepository = (function () {
     pokemonList = [];
     /* const loader = document.querySelector("#loading"); */
-    
+
     let modal = document.querySelector(".modal");
 
     function add(pokemon) {
@@ -99,7 +99,7 @@ let pokemonRepository = (function () {
         pokemonImage.src = pokemon.imageUrl;
         pokemonDetails.innerHTML = "Height: " + pokemon.height +
             "<br>" + "Types:  " + types;
-        
+
     }
 
     /* In order to close or hide the details modal */
