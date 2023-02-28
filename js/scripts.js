@@ -3,6 +3,24 @@ let pokemonRepository = (function () {
     /* const loader = document.querySelector("#loading"); */
 
     let modal = document.querySelector(".modal");
+    /*  Searching specific pokemon with the given name */
+    let search_input = document.querySelector("#search-input");
+    search_input.addEventListener('input', function (e) {
+        search_pokemon(e.target.value.toLowerCase());
+    });
+
+    function search_pokemon(value) {
+
+
+        let pokemonLists = document.querySelector("#pokemonList").children;
+
+        for (i = 0; i < pokemonLists.length; i++) {
+            let isMatched = pokemonLists[i].firstChild.textContent.includes(value);
+            pokemonLists[i].classList.toggle("hide", !isMatched);
+        }
+    }
+
+
 
     function add(pokemon) {
         pokemonList.push(pokemon);
@@ -102,10 +120,7 @@ let pokemonRepository = (function () {
 
     }
 
-    /* In order to close or hide the details modal */
-    function hideModal() {
-        modal.classList.remove("active");
-    }
+    
     return {
         add: add,
         getAll: getAll,
