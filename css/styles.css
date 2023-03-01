@@ -10,15 +10,16 @@ body{
 }
 
 .pokemonList{
-    padding: 20px;
+
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     
-
+    
 }
 .list-group-item{
     background: none;
@@ -27,8 +28,7 @@ body{
  .btn-secondary{
     background-color: rgb(213, 196, 223);
     padding:20px;
-    width:180px;
-    margin: 0 auto;
+    width: 250px;
     text-align: center;
     color: black;
     text-shadow: 2px 2px 5px rgb(121, 113, 113);
@@ -54,9 +54,8 @@ body{
 @keyframes spin{
     from{ transfrom: rotate(0deg);}
     to{ transform: rotate(360deg);}
-} */
-
-/* .modal-container{
+} 
+ .modal-container{
     position: fixed;
     opacity: 0;
     top: 0;
@@ -70,21 +69,22 @@ body{
 .modal-container.active{
     opacity: 1;
     pointer-events: all;
-}
-.modal{
+} */
+/* .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 700px;
+    height: 50%;
+    max-width: 900px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
     z-index: 20;
-}
+} */
 
-.modal-header{
+/* .modal-header{
     padding: 15px;
     display: flex;
     justify-content: space-between;
